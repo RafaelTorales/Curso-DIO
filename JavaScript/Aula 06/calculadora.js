@@ -95,7 +95,6 @@ function calculadora() {
                     break;
                 case 6:
                     potenciacao();
-                    break;
             }
         }
     }
