@@ -19,13 +19,16 @@ class Cardnews extends HTMLElement {
         cardLeft.appendChild(linkTitle);
         cardLeft.appendChild(newsContent);
         autor.textContent = "By " + (this.getAttribute("autor") || "Anonymous");
-        linkTitle.textContent = this.getAttribute("title")
-        newsContent.textContent = this.getAttribute("content")
+        linkTitle.textContent = this.getAttribute("title");
+        linkTitle.href = this.getAttribute("link");
+        newsContent.textContent = this.getAttribute("content");
 
         const cardRight = document.createElement("div");
         const newsImage = document.createElement("img");
         cardRight.setAttribute("class", "card_right");
         cardRight.appendChild(newsImage);
+        newsImage.src = this.getAttribute("photo") || "assets/default.png";
+        newsImage.alt = "Foto da noticia";
 
         componentRoot.appendChild(cardLeft);
         componentRoot.appendChild(cardRight);
