@@ -36,7 +36,47 @@ class Cardnews extends HTMLElement {
         return componentRoot;
     }
 
-    styles() {}
+    styles() {
+        const style = document.createElement("style");
+        style.textContent = `
+            .card {
+                width: 60vw;
+                display: flex;
+                flex-direction: row;
+                box-shadow: 9px 9px 27px;
+                justify-content: space-between;
+            }
+
+            .card_left {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 10px;
+            }
+
+            .card_left > a {
+                margin-top: 15px;
+                font-size: 25px;
+                color: black;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            .card_left > p {
+                color: #434343;
+            }
+
+            .card_left>span {
+                font-weight: bold;
+            }
+
+            .card_right>img {
+                height: 100%;
+            }
+        `;
+
+        return style;
+    }
 }
 
 customElements.define("card-news", Cardnews);
