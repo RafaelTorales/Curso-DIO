@@ -50,3 +50,6 @@ let infos: (string | number)[] = ["Rafael", 20, "Miria", 19];
 
 // Tuplas
 let boleto: [string, number, number] = ["agua conta", 199.9, 234529873241];
+
+// Datas
+let aniversario: Date = new Date("2022-12-01 05:00");
