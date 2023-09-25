@@ -1,8 +1,11 @@
 "use strict";
-function printaObjetos(pessoa) {
-    console.log(pessoa);
-}
-printaObjetos({
-    name: "Rafael",
-    vulgo: "Rafinha",
-});
+const bot1 = {
+    id: "1",
+    name: "Robozão",
+};
+const bot2 = {
+    id: "1",
+    name: "Robozão",
+};
+console.log(bot1);
+console.log(bot2);
