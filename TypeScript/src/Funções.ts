@@ -9,3 +9,8 @@ let soma: number = addNumber(4, 7);
 function callToPhone(phone: number | string): number | string {
     return phone;
 }
+
+// Funções Async
+async function getDatabase(id: number): Promise<string> {
+    return "Rafael";
+}
