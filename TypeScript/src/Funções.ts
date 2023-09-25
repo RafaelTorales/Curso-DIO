@@ -5,6 +5,7 @@ function addNumber(x: number, y: number): number {
 
 let soma: number = addNumber(4, 7);
 
-function addToHello(name: string): string {
-    return `Hello ${name}`;
+// Funções Multi Tipos
+function callToPhone(phone: number | string): number | string {
+    return phone;
 }
