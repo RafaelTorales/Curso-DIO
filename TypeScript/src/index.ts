@@ -47,3 +47,6 @@ let dados2: Array<string> = ["Rafael", "Miria", "Jhonny"];
 
 // Arrays multi types
 let infos: (string | number)[] = ["Rafael", 20, "Miria", 19];
+
+// Tuplas
+let boleto: [string, number, number] = ["agua conta", 199.9, 234529873241];
