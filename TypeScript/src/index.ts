@@ -1,10 +1,17 @@
 // Classes
+
+// Data modifiers
+// Public
+// Private
+// Protected
+
 class character {
-    name?: string;
+    protected name?: string;
     stregth: number;
     skill: number;
 
-    constructor(stregth: number, skill: number) {
+    constructor(name: string, stregth: number, skill: number) {
+        this.name = name;
         this.stregth = stregth;
         this.skill = skill;
     }
@@ -14,5 +21,5 @@ class character {
     }
 }
 
-const p1 = new character(10, 98);
-p1.attack();
+const p1 = new character("Rafael", 10, 98);
+p1.
