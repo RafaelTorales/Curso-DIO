@@ -1,40 +1,18 @@
-// Interfaces (type x interface)
-type robot = {
-    readonly id: number | string;
-    name: string;
-};
+// Classes
+class character {
+    name?: string;
+    stregth: number;
+    skill: number;
 
-interface robot2 {
-    readonly id: number | string;
-    name: string;
-    sayHello(): string;
-}
-
-const bot1: robot = {
-    id: "1",
-    name: "Robozão",
-};
-
-const bot2: robot2 = {
-    id: "1",
-    name: "Robozão",
-    sayHello: function (): string {
-        throw new Error("Function not implemented.");
-    },
-};
-
-class Pessoa implements robot2 {
-    id: string | number;
-    name: string;
-
-    constructor(id: string | number, name: string) {
-        this.id = id;
-        this.name = name;
+    constructor(stregth: number, skill: number) {
+        this.stregth = stregth;
+        this.skill = skill;
     }
-    sayHello(): string {
-        return `Hello ${this.name}`;
+
+    attack(): void {
+        console.log(`Attack with ${this.stregth} points`);
     }
 }
 
-const p = new Pessoa(1, "Gustman");
-console.log(p.sayHello());
+const p1 = new character(10, 98);
+p1.attack();
